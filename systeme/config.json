@@ -1,0 +1,20 @@
+{
+  "_aide": "Réglages propres à ce mémoire, lus par les outils de systeme/outils/. /demarrer les remplit. Les clés qui commencent par _ sont des explications. Contient des noms : ne pas publier ce fichier une fois rempli.",
+  "email_contact": "",
+  "_email_contact": "Facultatif : adresse transmise à OpenAlex et Crossref pour un accès plus rapide et plus fiable. Laisser vide sinon.",
+  "page_de_garde": {
+    "ecole": "À REMPLIR",
+    "programme": "À REMPLIR",
+    "auteur": "À REMPLIR",
+    "direction_du_memoire": "",
+    "annee_universitaire": "À REMPLIR",
+    "police": "Times New Roman"
+  },
+  "veille": {
+    "_aide": "openalex : recherche dans les titres et résumés des articles de revues ; expressions exactes entre guillemets, opérateurs AND, OR, NOT, pas de virgule. arxiv : syntaxe de l'API arXiv (abs:, ti:), pour les sujets proches de l'informatique. Les lignes qui contiennent À REMPLIR sont ignorées.",
+    "openalex": [
+      {"nom": "À REMPLIR : thème principal", "requete": "\"expression exacte\" AND (mot1 OR mot2)"}
+    ],
+    "arxiv": []
+  }
+}

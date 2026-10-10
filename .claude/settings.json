@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 systeme/outils/verifier_sources.py:*)",
+      "Bash(python3 systeme/outils/recherche_systematique.py:*)",
+      "Bash(python3 systeme/outils/veille.py:*)",
+      "Bash(python3 systeme/outils/noter.py:*)",
+      "Bash(python3 systeme/outils/compter_mots.py:*)",
+      "Bash(python3 systeme/outils/md2docx.py:*)"
+    ]
+  }
+}
