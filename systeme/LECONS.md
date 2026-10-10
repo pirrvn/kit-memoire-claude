@@ -80,3 +80,24 @@ Chaque leçon part d'un fait constaté, porte sa preuve et produit une règle. L
 
 - Constat : compté à la main par le rédacteur, un livrable s'est trouvé 15 % plus long que ce qu'il annonçait.
 - Règle : les mots se comptent avec systeme/outils/compter_mots.py (hors titre, notes et bibliographie, comme le demandent la plupart des écoles), jamais à la main.
+
+## L-015 · Ne pas transmettre l'adresse de l'auteur sans son accord
+
+- Constat : une requête vers un service d'accès libre (Unpaywall, qui exige une adresse e-mail) a été envoyée avec l'adresse de l'auteur, sans qu'il l'ait demandé.
+- Règle : n'utiliser l'adresse que si l'auteur l'a lui-même inscrite dans systeme/config.json (email_contact), et seulement pour OpenAlex et Crossref ; pour savoir si un article est en accès libre, OpenAlex suffit.
+
+## L-016 · Vérifier soi-même les propriétés d'un fichier Word
+
+- Constat : l'auteur n'a pas trouvé le menu de Word où vérifier son nom et sa société. Lire le .docx directement était plus simple et plus sûr.
+- Règle : ne pas envoyer l'auteur dans les menus ; lancer systeme/outils/verifier_word.py, qui signale les champs remplis sans afficher leur valeur.
+
+## L-017 · Partir du modèle officiel de l'école
+
+- Constat : un livrable a été mis en page avec une page de garde maison, alors que l'école fournissait un modèle Word avec son propre bloc de titre (champs demandés, pas de page de garde séparée).
+- Règle : avant de mettre en forme un livrable, chercher le modèle de l'école dans consignes/originaux/ et le remplir avec systeme/outils/remplir_modele.py (md2docx.py seulement s'il n'y a pas de modèle). Ne jamais écrire sur un Word que l'auteur a ouvert (fichier ~$ à côté) : produire un nouveau fichier.
+
+## L-018 · Le compte Microsoft d'entreprise s'inscrit dans les fichiers
+
+- Constat : après un enregistrement dans Word, le champ « dernier modificateur » contenait le nom du compte d'entreprise de l'auteur, au format « Nom, Prénom (service) », qui peut révéler l'employeur. Un contrôle fait sur un fichier plus ancien ne l'avait pas montré.
+- Règle : contrôler chaque version enregistrée par l'auteur juste avant la remise (verifier_word.py, puis --nettoyer s'il le faut). Les Word produits par le kit activent l'option qui retire ces informations à chaque enregistrement.
+

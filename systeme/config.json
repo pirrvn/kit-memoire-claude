@@ -10,10 +10,22 @@
     "annee_universitaire": "À REMPLIR",
     "police": "Times New Roman"
   },
+  "modele_word": {
+    "_aide": "Modèle Word fourni par l'école, rempli par remplir_modele.py. chemin : le fichier, en général dans consignes/originaux/. debut_du_corps : les premiers mots du premier paragraphe d'exemple du modèle (tout ce qui précède est gardé comme bloc de titre). remplacements : texte d'exemple du modèle -> texte voulu ; {titre}, {titre_court} et les champs de page_de_garde ({auteur}, {direction_du_memoire}...) sont remplacés. remplacements_en_tete : idem pour les seuls en-têtes et pieds de page.",
+    "chemin": "",
+    "debut_du_corps": "",
+    "remplacements": {
+      "Titre du livrable": "{titre}"
+    },
+    "remplacements_en_tete": {}
+  },
   "veille": {
     "_aide": "openalex : recherche dans les titres et résumés des articles de revues ; expressions exactes entre guillemets, opérateurs AND, OR, NOT, pas de virgule. arxiv : syntaxe de l'API arXiv (abs:, ti:), pour les sujets proches de l'informatique. Les lignes qui contiennent À REMPLIR sont ignorées.",
     "openalex": [
-      {"nom": "À REMPLIR : thème principal", "requete": "\"expression exacte\" AND (mot1 OR mot2)"}
+      {
+        "nom": "À REMPLIR : thème principal",
+        "requete": "\"expression exacte\" AND (mot1 OR mot2)"
+      }
     ],
     "arxiv": []
   }

@@ -18,7 +18,7 @@ Poser les questions par petits groupes (AskUserQuestion quand il y a des options
 5. Sources : bibliothèque et bases accessibles ; classements de revues reconnus par l'école.
 6. Politique de l'école sur l'IA : permise ou non, pour quelles parties, à déclarer ou non et comment. Si l'auteur ne sait pas, noter « à vérifier » et l'ajouter à ETAT.md comme action prioritaire.
 7. Le lecteur professionnel idéal : quel décideur du secteur lirait ce mémoire avec intérêt ? (sert au juge jury-pro)
-8. Pour la page de garde : nom de l'auteur et de la direction du mémoire (ils restent dans systeme/config.json ; prévenir que ce fichier ne doit pas être publié).
+8. Pour la page de garde : nom de l'auteur et de la direction du mémoire (ils restent dans systeme/config.json ; prévenir que ce fichier ne doit pas être publié). Si l'école fournit un modèle Word pour les livrables, le placer dans consignes/originaux/ et remplir la rubrique modele_word de config.json (chemin, premiers mots du texte d'exemple, textes d'exemple à remplacer) (L-017).
 
 ## 2. Remplir les fichiers du projet
 

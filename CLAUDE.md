@@ -50,6 +50,8 @@ Français simple, sans jargon technique. Aucun tiret cadratin ni demi-cadratin. 
 - L'IA ne retire jamais elle-même un garde-fou : c'est à l'utilisateur de le faire (L-009).
 - Trop de changements à la fois font perdre la main à l'auteur : un rapport de décision avant chaque nouvelle version (L-012).
 - Les mots se comptent avec compter_mots.py, jamais à la main (L-014).
+- L'adresse e-mail de l'auteur ne sort que s'il l'a inscrite dans config.json, et seulement vers OpenAlex et Crossref (L-015).
+- Un livrable se met en forme dans le modèle Word de l'école (remplir_modele.py) ; chaque version enregistrée par l'auteur passe par verifier_word.py avant la remise (L-016, L-017, L-018).
 
 ## Carte du dossier
 
@@ -59,4 +61,4 @@ PROJET.md (fiche du projet) · ETAT.md (état et plan) · DECISIONS.md (décisio
 
 - Agents (.claude/agents/), appelés par subagent_type : documentaliste, verificateur, redacteur, jury-academique, jury-pro, jury-ingenieur-ia, contradicteur.
 - Commandes (.claude/skills/) : /demarrer (configuration, une seule fois), /tournoi (choisir la problématique), /jury (faire noter un texte), /fin-de-session.
-- systeme/outils/ (Python 3, bibliothèque standard seulement) : verifier_sources.py (vérifie le registre ; --doi prépare une entrée ; --resume télécharge le résumé brut), recherche_systematique.py (requêtes OpenAlex d'un protocole, corpus dédoublonné, études témoins, échantillon pour un trieur humain), veille.py (nouveautés ; requêtes dans config.json), noter.py (notes du jury, moyennes par grille), compter_mots.py, md2docx.py (version Word avec page de garde).
+- systeme/outils/ (Python 3, bibliothèque standard seulement) : verifier_sources.py (vérifie le registre ; --doi prépare une entrée ; --resume télécharge le résumé brut), recherche_systematique.py (requêtes OpenAlex d'un protocole, corpus dédoublonné, études témoins, échantillon pour un trieur humain), veille.py (nouveautés ; requêtes dans config.json), noter.py (notes du jury, moyennes par grille), compter_mots.py, remplir_modele.py (remplit le modèle Word de l'école), md2docx.py (version Word avec page de garde, s'il n'y a pas de modèle), verifier_word.py (informations cachées d'un Word, sans afficher leurs valeurs ; --nettoyer).

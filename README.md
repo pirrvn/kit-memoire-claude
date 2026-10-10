@@ -106,7 +106,7 @@ Trois juges, qui ne savent ni qui a écrit le texte, ni de quelle version il s'a
 | `veille/` | les résultats de la veille |
 | `.claude/` | les agents et les commandes |
 
-Les outils de `systeme/outils/` se lancent seuls : Claude s'en charge. Pour mémoire : `verifier_sources.py` (registre, résumés), `recherche_systematique.py` (recherche reproductible dans OpenAlex), `veille.py`, `noter.py` (notes du jury), `compter_mots.py`, `md2docx.py` (version Word avec page de garde).
+Les outils de `systeme/outils/` se lancent seuls : Claude s'en charge. Pour mémoire : `verifier_sources.py` (registre, résumés), `recherche_systematique.py` (recherche reproductible dans OpenAlex), `veille.py`, `noter.py` (notes du jury), `compter_mots.py`, `remplir_modele.py` (remplit le modèle Word de l'école), `md2docx.py` (version Word avec page de garde, s'il n'y a pas de modèle), `verifier_word.py` (contrôle avant remise des informations cachées d'un Word : auteur, société, compte d'entreprise).
 
 ## Intégrité : à lire avant de commencer
 
