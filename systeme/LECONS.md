@@ -101,3 +101,13 @@ Chaque leçon part d'un fait constaté, porte sa preuve et produit une règle. L
 - Constat : après un enregistrement dans Word, le champ « dernier modificateur » contenait le nom du compte d'entreprise de l'auteur, au format « Nom, Prénom (service) », qui peut révéler l'employeur. Un contrôle fait sur un fichier plus ancien ne l'avait pas montré.
 - Règle : contrôler chaque version enregistrée par l'auteur juste avant la remise (verifier_word.py, puis --nettoyer s'il le faut). Les Word produits par le kit activent l'option qui retire ces informations à chaque enregistrement.
 
+
+## L-019 · Un agent ordinaire n'est jamais aveugle
+
+- Constat : un agent général lancé depuis le projet reçoit CLAUDE.md, la mémoire et le statut git ; il sait donc comment le texte est fabriqué. Un agent de type Explore ne les reçoit pas.
+- Règle : pour une évaluation à l'aveugle, utiliser des agents Explore (modèle imposé), un dossier hors du projet contenant seulement le document et les consignes officielles, et la consigne de ne lire que ces fichiers.
+
+## L-020 · Le Word peut contenir des retouches absentes du texte source
+
+- Constat : le PDF d'une version venait du Word retouché par l'auteur, alors que le fichier Markdown source ne contenait pas ces retouches. Repartir du Markdown les aurait effacées.
+- Règle : avant toute nouvelle version, comparer le texte du dernier Word (et du PDF) au Markdown source, reporter les retouches de l'auteur et produire un nouveau fichier plutôt qu'écraser le sien.

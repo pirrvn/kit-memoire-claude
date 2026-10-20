@@ -18,3 +18,9 @@ Tirée d'un premier mémoire de master mené avec ce système (sciences de gesti
 - recherche systématique reproductible (OpenAlex, études témoins, échantillon pour un trieur humain) et protocole de tri ;
 - veille réglable dans config.json, compteur de mots, conversion en Word avec page de garde ;
 - quatorze leçons héritées du premier mémoire, boîte à idées amorcée.
+
+## Kit v1.2 · 2026-10-20 · Documents de travail, PDF scannés, évaluation à l'aveugle
+
+- Nouvel outil md2docx_dossier.py : document de travail Markdown en Word lisible (vrais titres pour le volet de navigation, sommaire, listes, tableaux, notes de bas de page, numéros de page, propriétés neutres). Pour les documents de travail, pas pour les livrables.
+- Nouvel outil ocr_pdf.swift : texte d'un PDF scanné avec PDFKit et Vision de macOS, sans installation.
+- Deux leçons (L-019, L-020) : agents réellement aveugles, retouches de l'auteur dans le Word.
